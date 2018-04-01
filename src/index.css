@@ -1,0 +1,86 @@
+/**
+* Bootstrap fix
+*/
+button.list-group-item {
+    text-align: right;
+}
+
+/**
+* Youtube player iframe
+*/
+#ytplayer {
+    display: inline-block;
+    width: 100%;
+    height: 190px;
+}
+
+/**
+* Music player
+*/
+#MusicPlayer .artists {
+    display: block;
+    margin: 20px auto;
+}
+
+#MusicPlayer .artists > p {
+    font-weight: bold;
+}
+
+/**
+* Cover image
+*/
+#cover {
+    display: block;
+    width: 100%;
+    background: url('imgs/cover-rtl.jpg') no-repeat center 65%;
+    background-size: 100% auto;
+    padding: 120px 0;
+    margin-bottom: 20px;
+}
+
+#cover h1, #cover h2 {
+    display: block;
+    width: 100%;
+    margin: 0 auto 20px auto;
+    color: #FFFFFF;
+}
+
+#cover h1 {
+    font-weight: bold;
+}
+
+/**
+* Filterable List
+*/
+.filterableList .list-group {
+    display: block;
+    margin: 20px auto 0 auto;
+    height: 450px;
+    overflow: auto;
+}
+
+/**
+* Responsive
+*/
+@media screen and (max-width:770px){
+    #cover {
+        background-size: cover;
+        background-position: center bottom;
+        padding: 60px;
+    }
+
+    #cover h1, #cover h2 {
+        background-color: rgba(0,0,0,0.3);
+        text-align: center;
+    }
+
+    .filterableList {
+        margin-bottom: 20px;
+    }
+
+    .filterableList .list-group {
+        margin-top: 5px;
+        max-height: 150px;
+        height: auto;
+    }
+}

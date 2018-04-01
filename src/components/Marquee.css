@@ -1,0 +1,32 @@
+/**
+* Marquee text
+*/
+.marquee {
+    display: block;
+    width: 100%;
+    height: 25px;
+    overflow: hidden;
+    position: relative;
+}
+
+.marquee span {
+    display: block;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    white-space: nowrap;
+    text-align: center;
+
+    animation: marquee 7s linear infinite;
+}
+
+@keyframes marquee {
+  0% { right: 110%; }
+  100% { right: -110%; }
+}
